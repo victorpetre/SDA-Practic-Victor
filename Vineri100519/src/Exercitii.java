@@ -6,7 +6,8 @@ public class Exercitii {
         //numara();
       //  weekday();
        // triunghi();
-        brad();
+        //brad();
+        vocale();
     }
 
     //Count the number of even and odd eements in a given array of integers
@@ -68,16 +69,54 @@ public class Exercitii {
          }
             }
 
-        public static void brad() {
-        for (int i = 1; i < 5; i++) {
-            for (int j = 7; j > 0; j--) {
-                int a = Math.round(j/(i+1));
-                System.out.print(a);
-                char g = StringContent (sdfa);
-                
+        public static void vocale() {
+        //String sir = "w3resource";
+            System.out.println("Intorduceti o expresie: ");
+        Scanner sc = new Scanner(System.in);
+        String sir = sc.nextLine();
+        char[] arr = sir.toCharArray();
+        char[] voc = new char[] { 'a','e','i'};
+        int numar = 0;
+        for(char elem : arr) {
+            switch (elem) {
+                case 'a':
+                    numar += 1;
+                    break;
+                case 'e':
+                    numar += 1;
+                    break;
+                case 'i':
+                    numar += 1;
+                    break;
+                case 'o':
+                    numar += 1;
+                    break;
+                case 'u':
+                    numar += 1;
+                    break;
+                case 'A':
+                    numar += 1;
+                    break;
+                case 'E':
+                    numar += 1;
+                    break;
+                case 'I':
+                    numar += 1;
+                    break;
+                case 'O':
+                    numar += 1;
+                    break;
+                case 'U':
+                    numar += 1;
+                    break;
+                default: continue;
             }
 
-            }
+        }
+            System.out.println(numar);
+
+    }
+
         }
 
 
