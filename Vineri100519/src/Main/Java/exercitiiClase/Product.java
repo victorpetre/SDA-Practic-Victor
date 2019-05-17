@@ -16,9 +16,17 @@ public class Product {
         public Double getPrice() {
             return price;
         }
-public String toString(){
-            return name + "->" + price;
+        public void setName(String name){
+            this.name = name;
+        }
+        public void setPrice(double price){
+            this.price = price;
+        }
+     public String toString() {
+           return name + " -> " + price;
+       }
+
 }
 
-    }
+
 
